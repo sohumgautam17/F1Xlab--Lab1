@@ -6,11 +6,9 @@ class Talker(Node):
     def __init__(self):
         super().__init__('talker')
 
-        # Declare parameters
         self.declare_parameter('v', 0.0)
         self.declare_parameter('d', 0.0)
 
-        # Publish as fast as possible
         self.create_timer(0.01, self.publish_drive)
 
     def publish_drive(self):
