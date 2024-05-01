@@ -1,0 +1,4 @@
+talker:
+  v: 1.0  # Speed parameter
+  d: 0.5  # Steering angle parameter
+
